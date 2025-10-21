@@ -41,12 +41,18 @@ export const adminLinks = [
   },
   {
     id: 4,
+    url: 'add_instructor',
+    title: 'Add Instructor',
+    icon: UserPlus ,
+  },
+  {
+    id: 5,
     url: 'upload_content',
     title: 'Upload Content',
     icon: Upload
   },
   {
-    id: 5,
+    id: 6,
     url: 'learning_materials',
     title: 'Notes & Books',
     icon: BookOpenText 
