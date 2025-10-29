@@ -37,7 +37,7 @@ const Hero = () => {
 
       {/* Overlay content */}
       <div className=" relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-items-center text-white">
-        <div className="flex flex-col space-y-4 mt-6 md:mt-10 lg:mt-16">
+        <div className="flex flex-col space-y-4 mt-2 md:mt-6 lg:mt-10">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
             KENA DRIVING SCHOOL
           </h1>
