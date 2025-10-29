@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const Page = () => {
   return (
     <div id="about" className="flex flex-col items-center justify-center">
@@ -63,6 +62,15 @@ const Page = () => {
             <h1 className='text-orange-400 font-bold text-2xl'> Our Standards</h1>
             <p className='text-white'>We are the quality benchmark for driving schools. How? By maintaining strict adherence 
                 to the standardized curriculum set forth by NTSA in every single lesson and taking pride in being the 1st school to teach Artificial Intelligence in Thika.</p>    
+        </div>
+        <div className='bg-gray-900 p-3 flex flex-col gap-4 items-center justify-center rounded-xl'>
+            <div className='rounded-full p-3 bg-orange-400 w-16 h-16'>
+                <img src='/trust.png' alt='Mission' />
+            </div>
+            <h1 className='text-orange-400 font-bold text-2xl'> Our Promise</h1>
+            <p className='text-white'>We're proud to be known as the best driving school And Computer college in Thika.
+                 Our commitment to affordable pricing and five-star service in google has earned us the best reviews in Thika
+                 & its environs. We're not just a school; we're your partners for the long haul..</p>    
         </div>
         <div className='bg-gray-900 p-3 flex flex-col gap-4 items-center justify-center rounded-xl'>
             <div className='rounded-full p-3 bg-orange-400 w-16 h-16'>

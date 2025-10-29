@@ -18,7 +18,7 @@ const Navbar = ({ openNav }: Props) => {
       {/* Logo & Title */}
       <div className="flex items-center gap-3">
         <Image
-          src="/2d.png"
+          src="/logo.png"
           alt="Logo"
           width={50}
           height={50}
