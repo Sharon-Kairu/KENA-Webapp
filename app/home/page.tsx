@@ -5,7 +5,7 @@ import Reviews from "../components/reviews/Reviews";
 
 const page = () => {
   return (
-    <div>
+    <div id='home'>
         <Hero/>
         <Homecontent/>
         <Reviews/> 

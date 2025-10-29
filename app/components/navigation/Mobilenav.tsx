@@ -1,7 +1,8 @@
 'use client'
 import React from 'react'
 import { links } from '../../constants/Constants'
-import { Link } from 'react-scroll'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { CgClose } from "react-icons/cg"
 
 type Props = {
@@ -10,6 +11,7 @@ type Props = {
 }
 
 const Mobilenav = ({ showNav, closeNav }: Props) => {
+  const pathname=usePathname()
   const navOpen = showNav ? "translate-x-0" : "translate-x-full"
 
   return (
@@ -32,20 +34,22 @@ const Mobilenav = ({ showNav, closeNav }: Props) => {
 
         {/* Nav Links */}
         <div className="flex flex-col items-center justify-center h-full space-y-8 text-xl font-semibold tracking-wide">
-          {links.map((link) => (
-            <Link
+          {links.map((link) => {
+          const isActive = pathname === `/${link.url}`
+          return (
+            <Link 
               key={link.id}
-              to={link.url}
-              smooth={true}        
-              duration={800}       
-              offset={-70}          
-              spy={true}
-              onClick={closeNav} 
-              className="hover:text-[#f5deb3] transition-colors duration-300"
+              href={`/${link.url}`}
+              className={`transition-colors duration-200 ${
+                isActive 
+                  ? "text-orange-400 font-semibold border-b-2 border-orange-400 pb-1"
+                  : "hover:text-orange-400"
+              }`}
             >
               {link.title}
             </Link>
-          ))}
+          )
+        })}
         </div>
       </div>
     </div>

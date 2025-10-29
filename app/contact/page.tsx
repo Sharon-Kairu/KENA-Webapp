@@ -5,7 +5,7 @@ import { FiMail, FiPhone, FiInstagram ,FiTwitter,FiFacebook} from 'react-icons/f
 
 const Page = () => {
   return (
-    <div id="contact" className="px-6 md:px-16 py-20 bg-gray-50">
+    <div  className="px-6 md:px-16 py-20 bg-gray-50">
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
         {/* Responsive Image Section */}
         <div className="relative w-full h-64 sm:h-80 md:h-[500px] overflow-hidden">
