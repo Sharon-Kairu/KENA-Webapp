@@ -10,51 +10,18 @@ export const links=[
      title:'Courses'
     },
     {id:3,
+     url:'offers',
+     title:'Offers'
+    },
+    {id:4,
      url:'about',
      title:'About'
     },
     
-    {id:4,
+    {id:5,
      url:'contact',
      title:'Contact Us'
     },
+    
 ]
 
-export const adminLinks = [
-  {
-    id: 1,
-    url: 'admindash',
-    title: 'Dashboard',
-    icon: LayoutDashboard ,
-  },
-  {
-    id: 2,
-    url: 'students_list',
-    title: 'All Students',
-    icon: Users  ,
-  },
-  {
-    id: 3,
-    url: 'add_student',
-    title: 'Add Student',
-    icon: UserPlus ,
-  },
-  {
-    id: 4,
-    url: 'add_instructor',
-    title: 'Add Instructor',
-    icon: UserPlus ,
-  },
-  {
-    id: 5,
-    url: 'upload_content',
-    title: 'Upload Content',
-    icon: Upload
-  },
-  {
-    id: 6,
-    url: 'learning_materials',
-    title: 'Notes & Books',
-    icon: BookOpenText 
-  },
-];

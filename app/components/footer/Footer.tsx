@@ -8,14 +8,14 @@ const Footer = () => {
   return (
     <footer className='bg-gray-900 mt-6 p-4' >
         <div className='grid grid-cols-1 lg:grid-cols-3 p-10 gap-4 justify-between'>
-            <div className='flex flex-col'>
+            <div className='flex flex-col justify-center items-center'>
                 <Image 
                     src='/2D.png'
                     alt='Logo'
                     width={150}
                     height={150}
                 />
-                <h1 className='text-white text-2xl font-bold mt-4'>KENA DRIVING SCHOOL</h1>
+                <h1 className='text-white text-2xl font-bold mt-4'>KENA DRIVING SCHOOL AND COMPUTER COLLEGE</h1>
             </div>
 
             <div className='flex flex-col items-center justify-center gap-4 text-white'>
