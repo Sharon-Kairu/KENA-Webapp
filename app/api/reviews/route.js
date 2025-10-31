@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 
 export async function GET() {
   try {
-    const placeId = 'YOUR_GOOGLE_PLACE_ID'
+    const placeId = 'ChIJvdj-2Y5OLxgRdS9IxGyfjd8'
     const apiKey = process.env.GOOGLE_MAPS_API
     
     if (!apiKey) {
