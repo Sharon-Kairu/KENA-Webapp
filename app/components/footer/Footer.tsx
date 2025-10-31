@@ -2,12 +2,13 @@ import React from 'react'
 import Image from 'next/image'
 import { links } from "../../constants/Constants"
 import Link from 'next/link'
-import {FiMail, FiPhone, FiInstagram,} from 'react-icons/fi'
+import {FiMail, FiPhone, FiInstagram,FiFacebook, FiTwitter} from 'react-icons/fi'
+import { FaTiktok } from 'react-icons/fa'
 
 const Footer = () => {
   return (
     <footer className='bg-gray-900 mt-6 p-4' >
-        <div className='grid grid-cols-1 lg:grid-cols-3 p-10 gap-4 justify-between'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 p-10 gap-7 justify-between'>
             <div className='flex flex-col justify-center items-center'>
                 <Image 
                     src='/logo.png'
@@ -15,7 +16,7 @@ const Footer = () => {
                     width={150}
                     height={150}
                 />
-                <h1 className='text-white text-2xl font-bold mt-4'>KENA DRIVING SCHOOL AND COMPUTER COLLEGE</h1>
+                <h1 className='text-white text-center text-2xl font-bold mt-4'>KENA DRIVING SCHOOL<br/> AND<br/> COMPUTER COLLEGE</h1>
             </div>
 
             <div className='flex flex-col items-center justify-center gap-4 text-white'>
@@ -57,6 +58,37 @@ const Footer = () => {
                 >
                     <FiInstagram size={20} />
                     <span>@kenadrivingschool</span>
+                </a>
+                {/* Facebook */}
+                <a
+                href="https://www.facebook.com/KenaDsThika/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-gray-800 hover:text-blue-800 transition-colors"
+                >
+                <FiFacebook size={22} />
+                <span className="text-sm md:text-base">kenadrivingschool</span>
+                </a>
+                
+                {/* Twitter */}
+                <a
+                href="https://x.com/kena_dsThika"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-gray-800 hover:text-blue-300 transition-colors"
+                >
+                <FiTwitter size={22} />
+                <span className="text-sm md:text-base">kenadrivingschool</span>
+                </a>
+                {/* TikTok */}
+                <a
+                href="https://www.tiktok.com/@kenadrivingschool?_t=ZM-90x7wgKr0JQ&_r=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-gray-800 hover:text-blue-300 transition-colors"
+                >
+                <FaTiktok size={22} />
+                <span className="text-sm md:text-base">@kenadrivingschool</span>
                 </a>
                 </div>
 

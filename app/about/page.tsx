@@ -51,7 +51,7 @@ const Page = () => {
             <div className='rounded-full p-3 bg-orange-400 w-16 h-16'>
                 <img src='/meeting.png' alt='Mission' />
             </div>
-            <h1 className='text-orange-400 font-bold text-2xl'> Our Instructors</h1>
+            <h1 className='text-orange-400 font-bold text-2xl'> Our Tutors and Instructors</h1>
             <p className='text-white'>We're powered by a team of top notch instructors who are passionate about teaching. 
                 They are the secret behind our best theory, practical sessions & Computer sessions.</p>    
         </div>
@@ -70,7 +70,7 @@ const Page = () => {
             <h1 className='text-orange-400 font-bold text-2xl'> Our Promise</h1>
             <p className='text-white'>We're proud to be known as the best driving school And Computer college in Thika.
                  Our commitment to affordable pricing and five-star service in google has earned us the best reviews in Thika
-                 & its environs. We're not just a school; we're your partners for the long haul..</p>    
+                 & its environs. We're not just a school; we're your partners for the long haul.</p>    
         </div>
         <div className='bg-gray-900 p-3 flex flex-col gap-4 items-center justify-center rounded-xl'>
         <div className='rounded-full p-3 bg-orange-400 w-16 h-16'>

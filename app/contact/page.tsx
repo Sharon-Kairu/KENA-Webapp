@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { FiMail, FiPhone, FiInstagram ,FiTwitter,FiFacebook} from 'react-icons/fi'
+import { FaTiktok } from "react-icons/fa";
 
 const Page = () => {
   return (
@@ -75,6 +76,16 @@ const Page = () => {
           >
             <FiTwitter size={22} />
             <span className="text-sm md:text-base">kenadrivingschool</span>
+          </a>
+          {/* TikTok */}
+          <a
+            href="https://www.tiktok.com/@kenadrivingschool?_t=ZM-90x7wgKr0JQ&_r=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 text-gray-800 hover:text-blue-300 transition-colors"
+          >
+            <FaTiktok size={22} />
+            <span className="text-sm md:text-base">@kenadrivingschool</span>
           </a>
 
          
