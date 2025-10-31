@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://kenadrivingschool.vercel.app'),
   title: "Kena Driving School and Computer College",
   description: "Where your confidence behind the wheel and behind the computer is our top priority.",
   openGraph:{
