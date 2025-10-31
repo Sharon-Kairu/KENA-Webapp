@@ -32,7 +32,7 @@ const Page = () => {
           {/* Email */}
           <div className="flex items-center gap-3 text-gray-800 hover:text-orange-500 transition-colors">
             <FiMail size={22} />
-            <span className="text-sm md:text-base">kenadrvingschool@gmail.com</span>
+            <span className="text-sm md:text-base">kenadrvingschool13@gmail.com</span>
           </div>
 
           {/* WhatsApp / Phone */}
@@ -82,7 +82,7 @@ const Page = () => {
             href="https://www.tiktok.com/@kenadrivingschool?_t=ZM-90x7wgKr0JQ&_r=1"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 text-gray-800 hover:text-blue-300 transition-colors"
+            className="flex items-center gap-3 text-gray-800 hover:text-pink-500 transition-colors"
           >
             <FaTiktok size={22} />
             <span className="text-sm md:text-base">@kenadrivingschool</span>

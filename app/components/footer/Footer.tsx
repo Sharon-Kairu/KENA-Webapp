@@ -35,7 +35,7 @@ const Footer = () => {
                 <h1 className='text-white font-semibold text-xl'>Contact us</h1>
                 <div className="flex items-center gap-2">
                     <FiMail size={20} />
-                    <span>kenadrvingschool@gmail.com </span>
+                    <span>kenadrvingschool13@gmail.com </span>
                 </div>
                <div className="flex flex-col gap-3 mt-4 lg:mt-0">
                 {/* WhatsApp / Phone */}
@@ -85,7 +85,7 @@ const Footer = () => {
                 href="https://www.tiktok.com/@kenadrivingschool?_t=ZM-90x7wgKr0JQ&_r=1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-gray-800 hover:text-blue-300 transition-colors"
+                className="flex items-center gap-3 text-gray-800 hover:text-pink-500 transition-colors"
                 >
                 <FaTiktok size={22} />
                 <span className="text-sm md:text-base">@kenadrivingschool</span>
