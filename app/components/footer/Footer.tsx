@@ -2,105 +2,112 @@ import React from 'react'
 import Image from 'next/image'
 import { links } from "../../constants/Constants"
 import Link from 'next/link'
-import {FiMail, FiPhone, FiInstagram,FiFacebook, FiTwitter} from 'react-icons/fi'
+import { FiMail, FiPhone, FiInstagram, FiFacebook, FiTwitter } from 'react-icons/fi'
 import { FaTiktok } from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <footer className='bg-gray-900 mt-6 p-4' >
-        <div className='grid grid-cols-1 lg:grid-cols-3 p-10 gap-7 justify-between'>
-            <div className='flex flex-col justify-center items-center'>
-                <Image 
-                    src='/logo.png'
-                    alt='Logo'
-                    width={150}
-                    height={150}
-                />
-                <h1 className='text-white text-center text-2xl font-bold mt-4'>KENA DRIVING SCHOOL<br/> AND<br/> COMPUTER COLLEGE</h1>
-            </div>
-
-            <div className='flex flex-col items-center justify-center gap-4 text-white'>
-                {links.map((link)=>(
-                    <Link 
-                       key={link.url}
-                       href={`/${link.url}`}>
-                          {link.title}
-                    </Link>
-                ))}
-
-            </div>
-
-
-            <div className='flex flex-col items-center justify-center gap-4 text-white'>
-                <h1 className='text-white font-semibold text-xl'>Contact us</h1>
-                <div className="flex items-center gap-2">
-                    <FiMail size={20} />
-                    <span>kenadrvingschool13@gmail.com </span>
-                </div>
-               <div className="flex flex-col gap-3 mt-4 lg:mt-0">
-                {/* WhatsApp / Phone */}
-                <a 
-                    href="https://wa.me/254713449911" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 hover:text-green-600 transition"
-                >
-                    <FiPhone size={20} />
-                    <span>+254 713 449 911</span>
-                </a>
-
-                {/* Instagram */}
-                <a 
-                    href="https://www.instagram.com/kena_dsthika/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 hover:text-pink-500 transition"
-                >
-                    <FiInstagram size={20} />
-                    <span>@kenadrivingschool</span>
-                </a>
-                {/* Facebook */}
-                <a
-                href="https://www.facebook.com/KenaDsThika/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 text-gray-800 hover:text-blue-800 transition-colors"
-                >
-                <FiFacebook size={22} />
-                <span className="text-sm md:text-base">kenadrivingschool</span>
-                </a>
-                
-                {/* Twitter */}
-                <a
-                href="https://x.com/kena_dsThika"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 text-gray-800 hover:text-blue-300 transition-colors"
-                >
-                <FiTwitter size={22} />
-                <span className="text-sm md:text-base">kenadrivingschool</span>
-                </a>
-                {/* TikTok */}
-                <a
-                href="https://www.tiktok.com/@kenadrivingschool?_t=ZM-90x7wgKr0JQ&_r=1"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 text-gray-800 hover:text-pink-500 transition-colors"
-                >
-                <FaTiktok size={22} />
-                <span className="text-sm md:text-base">@kenadrivingschool</span>
-                </a>
-                </div>
-
-            </div>
-        </div>
-
+    <footer className="bg-gray-900 mt-6 p-4">
+      <div className="grid grid-cols-1 lg:grid-cols-3 p-10 gap-7 justify-between">
         
-
-        <div className="text-center font-bold text-gray-700 text-sm mt-10 border-t border-gray-200 pt-4">
-        © {new Date().getFullYear()} KENA DRIVING SCHOOL. All rights reserved.
+        {/* Logo and Title */}
+        <div className="flex flex-col justify-center items-center">
+          <Image 
+            src="/logo.png"
+            alt="Logo"
+            width={150}
+            height={150}
+          />
+          <h1 className="text-white text-center text-2xl font-bold mt-4">
+            KENA DRIVING SCHOOL<br />AND<br />COMPUTER COLLEGE
+          </h1>
         </div>
 
+        {/* Links */}
+        <div className="flex flex-col items-center justify-center gap-4 text-white">
+          {links.map((link) => (
+            <Link 
+              key={link.url}
+              href={`/${link.url}`}
+              className="hover:text-orange-400 transition"
+            >
+              {link.title}
+            </Link>
+          ))}
+        </div>
+
+        {/* Contact Section */}
+        <div className="flex flex-col items-center justify-center gap-4 text-white">
+          <h1 className="font-semibold text-xl">Contact Us</h1>
+
+          <div className="flex items-center gap-2">
+            <FiMail size={20} />
+            <span>kenadrvingschool13@gmail.com</span>
+          </div>
+
+          <div className="flex flex-col gap-3 mt-4 lg:mt-0">
+            {/* WhatsApp / Phone */}
+            <a 
+              href="https://wa.me/254713449911" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-green-600 transition"
+            >
+              <FiPhone size={20} />
+              <span>+254 713 449 911</span>
+            </a>
+
+            {/* Instagram */}
+            <a 
+              href="https://www.instagram.com/kena_dsthika/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-pink-500 transition"
+            >
+              <FiInstagram size={20} />
+              <span>@kenadrivingschool</span>
+            </a>
+
+            {/* Facebook (gray text) */}
+            <a
+              href="https://www.facebook.com/KenaDsThika/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 text-gray-400 hover:text-blue-600 transition-colors"
+            >
+              <FiFacebook size={22} />
+              <span className="text-sm md:text-base">kenadrivingschool</span>
+            </a>
+            
+            {/* Twitter (gray text) */}
+            <a
+              href="https://x.com/kena_dsThika"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 text-gray-400 hover:text-blue-300 transition-colors"
+            >
+              <FiTwitter size={22} />
+              <span className="text-sm md:text-base">kenadrivingschool</span>
+            </a>
+
+            {/* TikTok (gray text) */}
+            <a
+              href="https://www.tiktok.com/@kenadrivingschool?_t=ZM-90x7wgKr0JQ&_r=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 text-gray-400 hover:text-pink-500 transition-colors"
+            >
+              <FaTiktok size={22} />
+              <span className="text-sm md:text-base">@kenadrivingschool</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Text */}
+      <div className="text-center font-bold text-gray-700 text-sm mt-10 border-t border-gray-200 pt-4">
+        © {new Date().getFullYear()} KENA DRIVING SCHOOL. All rights reserved.
+      </div>
     </footer>
   )
 }
